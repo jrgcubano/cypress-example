@@ -40,4 +40,4 @@ One solution is to use [cy.viewport()](https://docs.cypress.io/api/commands/view
 
 ## :link: References
 
-Original source: https://github.com/jrgcubano/cypress-example.git  
+Original source: https://github.com/helenanull/cypress-example 
