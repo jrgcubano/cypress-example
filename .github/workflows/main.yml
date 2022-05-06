@@ -39,7 +39,7 @@ jobs:
         run: yarn install
 
       - name: Cypress install
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v3
         with:
           runTests: false
       # report machine parameters
@@ -83,7 +83,7 @@ jobs:
       #     path: build
 
       - name: "UI Tests - Chrome"
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v3
         with:
           start: yarn run cy:open:web
           # wait-on: "http://localhost:3000" # to wait for a local server if we need too
@@ -128,7 +128,7 @@ jobs:
       #     path: build
 
       - name: "UI Tests - Firefox"
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v3
         with:
           start: yarn run cy:open:web
           # wait-on: "http://localhost:3000"
@@ -169,7 +169,7 @@ jobs:
       #     path: build
 
       - name: "UI Tests - Electron - Windows"
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v3
         with:
           # start: yarn start:ci
           start: npm run cy:open:web
@@ -184,4 +184,4 @@ jobs:
         #   CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
         #   # Recommended: pass the GitHub token lets this action correctly
         #   # determine the unique run id necessary to re-run the checks
-        #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}          
+        #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
